@@ -1,0 +1,26 @@
+BDA Practical 1: Hive Commands
+Aim: To understand CREATE, SHOW, USE, DROP and DESCRIBE commands.
+
+NOTE: These are HiveQL commands, not R code. Run them in a Hive CLI or Beeline session.
+
+CREATE DATABASE college;
+SHOW DATABASES;
+USE college;
+
+CREATE TABLE student (
+    id INT,
+    name STRING,
+    marks INT
+);
+
+SHOW TABLES;
+DESCRIBE student;
+
+Optional cleanup (these commands delete the table/database):
+-- DROP TABLE student;
+-- DROP DATABASE college;
+
+Expected DESCRIBE student output:
+id       int
+name     string
+marks    int
